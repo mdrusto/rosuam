@@ -46,7 +46,13 @@ export ROS_HOSTNAME=COMPUTER_IP_ADDRESS
 
 On the **Pi**: 
 1. `nano ~/.bashrc`
-2. Scroll to the end of the file (can be done using CTRL+END). Add or edit the following lines: `export ROS_MASTER_URI=http://PI_IP_ADDRESS:11311`, `ROS_IP=PI_IP_ADDRESS`, `ROS_HOSTNAME=PI_IP_ADDRESS`
+2. Scroll to the end of the file (can be done using CTRL+END). Add or edit the following lines:
+```
+export ROS_MASTER_URI=http://PI_IP_ADDRESS:11311
+export ROS_IP=PI_IP_ADDRESS
+export ROS_HOSTNAME=PI_IP_ADDRESS
+```
+
 3. Save the file and exit, then run `source ~/.bashrc`.
 
 You can find out the IP address of the computer or Pi by running `ifconfig` in a terminal.
